@@ -1,81 +1,76 @@
-🚗 1. Application Web (HTML/CSS + PHP)
+# 🚗 Car Rental Management System  
 
-Le dossier car-rental-website contient un site web permettant de gérer les opérations d'une agence de location de voitures.
+Un projet complet de gestion de location automobile combinant **une application web (HTML/CSS + PHP)** et **une application desktop Java (Swing)**.
 
-Fonctionnalités principales :
+---
 
-Gestion des clients
+## 🌐 1. Application Web (HTML/CSS + PHP)
 
-Ajout, modification et affichage des clients (client.html, client.php).
+Le dossier **`car-rental-website`** contient un site web permettant de gérer les opérations d’une agence de location de voitures.
 
-Gestion des modèles et marques de voitures
+### ✔️ Fonctionnalités principales
 
-Pages pour consulter et modifier les informations des véhicules (model.html, brand.php).
+#### 👥 Gestion des clients
+- Ajout, modification et affichage des clients  
+  *(client.html, client.php)*
 
-Gestion des prix et locations
+#### 🚘 Gestion des modèles et marques de voitures
+- Consultation et mise à jour des informations des véhicules  
+  *(model.html, brand.php)*
 
-Consultation et mise à jour des tarifs (price.html, price.php)
+#### 💰 Gestion des prix et des locations
+- Consultation et modification des tarifs *(price.html, price.php)*  
+- Enregistrement d’une nouvelle location *(rental.html, rentalinsert.php)*  
+- Mise à jour d’une location existante *(update_rental.html, updaterental.php)*  
 
-Enregistrement d’une nouvelle location (rental.html, rentalinsert.php)
+---
 
-Modification d’une location (update_rental.html, updaterental.php)
+### 🛠️ Backend (PHP)
+- Backend développé en **PHP**
+- Connexion à la base via **PDO** *(pdo.php)*
+- Opérations **CRUD** réparties dans plusieurs scripts  
+  *(insert.php, update.php, delete.php, etc.)*
 
-Backend :
+### 🎨 Frontend (HTML/CSS)
+- Interface simple et fonctionnelle  
+- Pages dédiées : home, about, models, rental…  
+- Fichiers CSS + images intégrés *(home.css, img1.png, etc.)*
 
-Le backend est en PHP.
+---
 
-La base de données est gérée via PDO (pdo.php).
+## 💻 2. Application Desktop Java (Java Swing GUI)
 
-Les opérations CRUD (Create, Read, Update, Delete) sont réparties dans plusieurs scripts (insert.php, update.php, etc.).
+Dans le dossier **`java-app-rental`**, on trouve l’application Java Swing.
 
-Frontend :
+### 🎯 Fichier principal
+- **CarRentalGUI.java**
 
-Interface HTML/CSS simple et fonctionnelle.
+### ✔️ Fonctionnalités
+Interface graphique permettant de :
+- gérer les voitures  
+- gérer les clients  
+- gérer les locations  
+- mettre à jour les données  
 
-Plusieurs pages dédiées (home, about, models, rental, etc.).
+Cette application peut servir :
+- d’outil interne pour les employés de l’agence  
+- ou de complément à l’application web
 
-Fichiers CSS et images inclus (home.css, img1.png, etc.).
+---
 
-💻 2. Application Java (Java Swing GUI)
+## 🧩 Objectif du projet
 
-Dans java-app-rental, on trouve un fichier principal :
+Ce projet démontre un système complet de gestion de location de voitures incluant :
 
-CarRentalGUI.java
+- 🌐 **Une interface web** pour l’utilisation en ligne  
+- 💻 **Une application desktop Java** pour la gestion interne  
+- 🗄️ **Un backend PHP commun** pour la manipulation des données  
 
-Fonctionnalités incluses :
+C’est un excellent projet pour pratiquer :
 
-Une interface Swing permettant de :
+- Développement web (**HTML/CSS**)  
+- Programmation serveur (**PHP + PDO**)  
+- Développement desktop (**Java Swing**)  
+- Conception de systèmes **CRUD** complets  
 
-gérer les voitures,
-
-gérer les clients,
-
-gérer les locations,
-
-mettre à jour les données.
-
-Cette interface sert soit :
-
-d’application complémentaire au site web,
-
-soit d’outil local pour un employé de l’agence.
-
-🧩 Objectif du projet
-
-Ce projet vise à montrer un système complet de gestion de location automobile, combinant :
-
-une interface web pour l’utilisation en ligne,
-
-une application desktop Java pour la gestion interne,
-
-un backend PHP commun pour la manipulation des données.
-
-C’est un projet idéal pour pratiquer :
-
-développement web (HTML/CSS),
-
-programmation serveur (PHP + PDO),
-
-création d’interfaces desktop (Java Swing),
-
-logique métier autour d’un système CRUD complet.
+---
