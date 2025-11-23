@@ -74,3 +74,13 @@ C’est un excellent projet pour pratiquer :
 - Conception de systèmes **CRUD** complets  
 
 ---
+## 📸 Screenshots
+
+### 🏠 Home Page
+<img src="home.png" width="600"/>
+
+### 🚘 Cars Models Page
+<img src="car.png" width="600"/>
+
+### 📝 Clients Page
+<img src="client.png" width="600"/>
