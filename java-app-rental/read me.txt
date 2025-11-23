@@ -1,0 +1,3 @@
+this code was done in NetBeans 
+
+and also make sure the connecter jar is properly included

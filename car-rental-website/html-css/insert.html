@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert New Car - AMER CARS</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+        
+<body>
+    <section class="header" id="header">
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="home.html">AMER CARS</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Cars</a>
+                        <div class="dropdown-content">
+                            <a href="insert.html">Insert a Car</a>
+                            <a href="model.html">Find Model</a>
+                            <a href="price.html">Find price</a>
+                            <a href="update.html">Update Car</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Rental</a>
+                        <div class="dropdown-content">
+                            <a href="rental.html">Insert Rental</a>
+                            <a href="update_rental.html">Update Rental</a>
+                        </div>
+                    </li>
+                    <li><a href="client.html">Client</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="about-content">
+                <h2>Insert a New Car</h2>
+                <form action="insert.php" method="post">
+                    <div class="form-group">
+                        <label for="immat">Immatriculation of the car:</label>
+                        <input type="text" id="immat" name="immat">
+                    </div>
+                    <div class="form-group">
+                        <label for="brand">Brand:</label>
+                        <input type="text" id="brand" name="brand">
+                    </div>
+                    <div class="form-group">
+                        <label for="model">Model:</label>
+                        <input type="text" id="model" name="model">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price By Day:</label>
+                        <input type="text" id="price" name="price">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <!-- Display success message -->
+                <?php if ($insert_result): ?>
+                <p><?=$insert_result?></p>
+                <?php endif; ?>
+            </div>
+        </div>
+    </section>
+</body>   
+</html>

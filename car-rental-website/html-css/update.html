@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Car - AMER CARS</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+    <section class="header" id="header">
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="home.html">AMER CARS</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Cars</a>
+                        <div class="dropdown-content">
+                            <a href="insert.html">Insert a Car</a>
+                            <a href="model.html">Find Model</a>
+                            <a href="update.html">Update Car</a>
+                            <a href="retrieve-price.html">Retrieve Price</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Rental</a>
+                        <div class="dropdown-content">
+                            <a href="insert-rental.html">Insert Rental</a>
+                            <a href="update-rental.html">Update Rental</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Client</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="update-car">
+                <h2>Update Car Price By Day</h2>
+                <!-- Display the update result message -->
+                <?php if (!empty($update_result)): ?>
+                    <div class="result"><?php echo $update_result; ?></div>
+                <?php endif; ?>
+                <!-- Update Car Form -->
+                <form id="update-car-form" action="update.php" method="post">
+                    <div class="form-group">
+                        <label for="immat">Immatriculation:</label>
+                        <input type="text" id="immat" name="immat" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="priceByDay">Price By Day:</label>
+                        <input type="text" id="priceByDay" name="priceByDay" required>
+                    </div>
+                    <button type="submit">Update Car</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>   
+</html>

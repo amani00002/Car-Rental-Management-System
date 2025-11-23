@@ -1,0 +1,1 @@
+to  verify if the sever is connected use "pdo" file

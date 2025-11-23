@@ -1,0 +1,574 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, a:hover{
+    text-decoration: none;
+    color: #fff;
+
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(back4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
+}
+.header .nav-bar{
+    width: 90%;
+    height: 70px;
+    margin: auto;
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.header .nav-bar .logo a{
+    margin-left: 5px;
+}
+.header .nav-bar .logo a{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+.header .nav-bar .menu ul li a{
+    margin-right: 50px;
+}
+.header .nav-bar .menu ul li a{
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-radius:  5px;
+    text-transform: capitalize;
+    transition: all 0.5s;
+    opacity: 0.5;
+
+}
+.header .nav-bar .menu ul li a.active{
+    opacity: 1;
+}
+.header .nav-bar .menu ul li a:hover{
+    opacity: 1;
+}
+.hero{
+    width:100%;
+
+}
+.hero .row{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-top: 15px;
+    margin: auto;
+}
+.hero .row .left-sec {
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.hero .row .left-sec h2 {
+    font-size: 70px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.hero .row .left-sec h2 span {
+    color: #d43242;
+}
+
+.hero .row .left-sec p {
+    margin: 15px 0;
+    color: #fff;
+    line-height: 28px;
+    
+}
+.hero .row .left-sec .discover-btn{
+    display: flex;
+    align-items: center;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 0 15px;
+    border: 3px solid #ffa938;
+    background-color: #d43242;
+    box-shadow: 5px 7px 20px #000;
+}
+.hero .row .left-sec .discover-btn a{
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-right: 15px;
+    text-transform: capitalize;
+}
+.hero .row .left-sec .discover-btn span{
+    color: #fff;
+    font-size: 30px;
+}
+.hero .right-sec {
+    width: 50%;
+    padding-top: 70px;
+
+}
+.hero .right-sec img{
+    width: 550px;
+    height: 400px;
+    margin: auto;
+    float: right;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: all 0.5s;
+    opacity: 0.5; /* Adjusted */
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the opacity of the dropdown button on hover */
+  .dropdown:hover .dropbtn {
+    opacity: 1; /* Adjusted */
+  }
+  .about-content {
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.about-content h2 {
+    font-size: 70px;
+    color: #d43242;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 20px;
+    line-height: 30px;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    font-weight: 90%;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.form-group input[type="text"] {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #d43242;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #f54900;
+}
+
+
+/* Find Model page styles */
+.find-model {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.find-model .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.find-model h2 {
+    font-size: 36px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    
+}
+
+.search-bar input[type="text"] {
+    width: 30%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #d43242;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-bar button:hover {
+    background-color: #d12405;
+}
+
+#searchResults {
+    margin-top: 20px;
+}
+
+#searchResults table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#searchResults th, #searchResults td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#searchResults th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#searchResults td {
+    text-align: left;
+}
+
+#searchResults tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#searchResults tr:hover {
+    background-color: #ddd;
+}
+
+
+/* Update Car page styles */
+.update-car {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.update-car .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.update-car h2 {
+    font-size: 36px;
+    color: #d43242;
+    margin-bottom: 20px;
+}
+
+.update-car .form-group {
+    margin-bottom: 20px;
+}
+
+.update-car .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.update-car .form-group input[type="text"] {
+    width: 50%; /* Increased width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0 auto; /* Centered input */
+    display: block; /* Centered input */
+}
+
+.update-car button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #d43242;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.update-car button[type="submit"]:hover {
+    background-color: #d12405;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+/* Insert Rental page styles */
+.insert-rental {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.insert-rental .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.insert-rental h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.insert-rental .form-group {
+    margin-bottom: 20px;
+}
+
+.insert-rental .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input[type="date"],
+.form-group input[type="text"] {
+    width: 50%;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10px;
+}
+
+.insert-rental button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #d43242;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.insert-rental button[type="submit"]:hover {
+    background-color: #d12405;
+}
+
+/* Retrieve Price page styles */
+.retrieve-price{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.retrieve-price .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.retrieve-price h2 {
+    font-size: 36px;
+    color: #d43242;
+    margin-bottom: 20px;
+}
+
+.retrieve-price .form-group {
+    margin-bottom: 20px;
+}
+
+.retrieve-price .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.retrieve-price .form-group input[type="text"] {
+    width: 50%; /* Increased width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0 auto; /* Centered input */
+    display: block; /* Centered input */
+}
+
+.retrieve-price button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #d43242;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.retrieve-price button[type="submit"]:hover {
+    background-color: #d12405;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Update Rental page styles */
+.update-rental {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.update-rental .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.update-rental h2 {
+    font-size: 36px;
+    color: #d43242;
+    margin-bottom: 20px;
+}
+
+.update-rental .form-group {
+    margin-bottom: 20px;
+}
+
+.update-rental .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.update-rental .form-group input[type="text"],
+.update-rental .form-group input[type="date"] {
+    width: 50%; /* Increased width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0 auto; /* Centered input */
+    display: block; /* Centered input */
+}
+
+.update-rental button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #d43242;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.update-rental button[type="submit"]:hover {
+    background-color: #d12405;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Find Car page styles */
+.find-car {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.find-car h2 {
+    font-size: 36px;
+    color: #d43242;
+    margin-bottom: 20px;
+}
+
+.find-car .form-group {
+    margin-bottom: 20px;
+}
+
+.find-car .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.find-car .form-group input[type="text"] {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.find-car button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #d43242;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.find-car button[type="submit"]:hover {
+    background-color: #d12405;
+}

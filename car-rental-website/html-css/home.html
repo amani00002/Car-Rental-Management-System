@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMER CARS</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="home.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+        
+<body>
+    <section class="header" id="header">
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="home.html">AMER CARS</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html" class="active">Home</a></li> 
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Cars</a>
+                        <div class="dropdown-content">
+                            <a href="insert.html">Insert a Car</a>
+                            <a href="model.html">Find Model</a>
+                            <a href="price.html">Find price</a>
+                            <a href="update.html">Update Car</a>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Rental</a>
+                        <div class="dropdown-content">
+                            <a href="rental.html">Insert Rental</a>
+                            <a href="update_rental.html">Update Rental</a>
+                        </div>
+                    </li>
+                    <li><a href="client.html">Client</a></li>
+             
+                </ul>
+            </div>
+           
+            
+        </div>
+        <div class="hero">
+            <div class="row">
+                <div class="left-sec">
+                    <div class="content">
+                        <h2><span>AMER</span> CARS</h2>
+                        <p>Discover seamless car rentals at AMER CARS. With a diverse selection of well-maintained vehicles and top-notch service, we ensure your journey is as smooth as possible.</p>
+                    </div>
+                    <button class="discover-btn">
+                        <li><a href="about.html" class="about-btn">About Us <span>&rarr;</span></a></li>
+
+                    </button>
+                
+                    
+                    
+                </div> 
+                <div class="right-sec">
+                    <div class="my-car">
+                        
+                        <div><img src="img2.png" alt="Image 1"></div>
+                        <div><img src="img3.png" alt="Image 3"></div>
+                        <div><img src="img4.png" alt="Image 4"></div>  
+                        <div><img src="img5.png" alt="Image 5"></div>
+                        <div><img src="img6.png" alt="Image 6"></div>
+
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+<script  src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+            $('.my-car').slick({
+                autoplay: true,
+                dots: true,
+                speed: 900,
+            })
+        });
+
+</script>
+</body>   
+</html>
