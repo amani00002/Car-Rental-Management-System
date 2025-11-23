@@ -77,10 +77,10 @@ C’est un excellent projet pour pratiquer :
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-<img src="home.png" width="600"/>
+<img src="home.png" width="900"/>
 
 ### 🚘 Cars Models Page
-<img src="car.png" width="600"/>
+<img src="car.png" width="900"/>
 
 ### 📝 Clients Page
-<img src="client.png" width="600"/>
+<img src="Client.png" width="900"/>
